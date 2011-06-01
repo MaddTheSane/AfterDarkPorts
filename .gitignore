@@ -21,3 +21,12 @@ Bouncing Ball/Bouncing Ball.xcodeproj/*.mode1v3
 Bouncing Ball/Bouncing Ball.xcodeproj/*.mode2v3
 Bouncing Ball/Bouncing Ball.xcodeproj/xcuserdata
 Bouncing Ball/Bouncing Ball.xcodeproj/project.xcworkspace
+
+build/
+All ScreenSavers.xcodeproj/*.pbxuser
+All ScreenSavers.xcodeproj/*.perspective
+All ScreenSavers.xcodeproj/*.perspectivev3
+All ScreenSavers.xcodeproj/*.mode1v3
+All ScreenSavers.xcodeproj/*.mode2v3
+All ScreenSavers.xcodeproj/xcuserdata
+All ScreenSavers.xcodeproj/project.xcworkspace

@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Can Of Worms' target in the 'Can Of Worms' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+	#import <ScreenSaver/ScreenSaver.h>
+#endif

@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550933B0138D703600577F07 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550933AF138D703600577F07 /* Cocoa.framework */; };
+		550933B2138D703600577F07 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550933B1138D703600577F07 /* ScreenSaver.framework */; };
+		550933BC138D703600577F07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 550933BA138D703600577F07 /* InfoPlist.strings */; };
+		550933BF138D703600577F07 /* ZotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 550933BE138D703600577F07 /* ZotView.h */; };
+		550933C1138D703600577F07 /* ZotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550933C0138D703600577F07 /* ZotView.m */; };
+		550933D0138D710B00577F07 /* Thunder.aif in Resources */ = {isa = PBXBuildFile; fileRef = 550933CF138D710B00577F07 /* Thunder.aif */; };
+		550933D2138D719200577F07 /* ZotPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550933D1138D719200577F07 /* ZotPrefs.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		550933AC138D703600577F07 /* Zot.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zot.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		550933AF138D703600577F07 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		550933B1138D703600577F07 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		550933B4138D703600577F07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		550933B5138D703600577F07 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		550933B6138D703600577F07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		550933B9138D703600577F07 /* Zot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Zot-Info.plist"; sourceTree = "<group>"; };
+		550933BB138D703600577F07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		550933BD138D703600577F07 /* Zot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zot-Prefix.pch"; sourceTree = "<group>"; };
+		550933BE138D703600577F07 /* ZotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZotView.h; sourceTree = "<group>"; };
+		550933C0138D703600577F07 /* ZotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZotView.m; sourceTree = "<group>"; };
+		550933CF138D710B00577F07 /* Thunder.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thunder.aif; sourceTree = "<group>"; };
+		550933D1138D719200577F07 /* ZotPrefs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZotPrefs.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		550933A7138D703600577F07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550933B0138D703600577F07 /* Cocoa.framework in Frameworks */,
+				550933B2138D703600577F07 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5509339F138D703500577F07 = {
+			isa = PBXGroup;
+			children = (
+				550933B7138D703600577F07 /* Zot */,
+				550933AE138D703600577F07 /* Frameworks */,
+				550933AD138D703600577F07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		550933AD138D703600577F07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				550933AC138D703600577F07 /* Zot.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		550933AE138D703600577F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550933AF138D703600577F07 /* Cocoa.framework */,
+				550933B1138D703600577F07 /* ScreenSaver.framework */,
+				550933B3138D703600577F07 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		550933B3138D703600577F07 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550933B4138D703600577F07 /* AppKit.framework */,
+				550933B5138D703600577F07 /* CoreData.framework */,
+				550933B6138D703600577F07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		550933B7138D703600577F07 /* Zot */ = {
+			isa = PBXGroup;
+			children = (
+				550933BE138D703600577F07 /* ZotView.h */,
+				550933C0138D703600577F07 /* ZotView.m */,
+				550933B8138D703600577F07 /* Supporting Files */,
+			);
+			path = Zot;
+			sourceTree = "<group>";
+		};
+		550933B8138D703600577F07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				550933CF138D710B00577F07 /* Thunder.aif */,
+				550933B9138D703600577F07 /* Zot-Info.plist */,
+				550933BA138D703600577F07 /* InfoPlist.strings */,
+				550933BD138D703600577F07 /* Zot-Prefix.pch */,
+				550933D1138D719200577F07 /* ZotPrefs.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		550933A8138D703600577F07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550933BF138D703600577F07 /* ZotView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		550933AB138D703600577F07 /* Zot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550933C4138D703600577F07 /* Build configuration list for PBXNativeTarget "Zot" */;
+			buildPhases = (
+				550933A6138D703600577F07 /* Sources */,
+				550933A7138D703600577F07 /* Frameworks */,
+				550933A8138D703600577F07 /* Headers */,
+				550933A9138D703600577F07 /* Resources */,
+				550933AA138D703600577F07 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zot;
+			productName = Zot;
+			productReference = 550933AC138D703600577F07 /* Zot.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		550933A1138D703500577F07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 550933A4138D703500577F07 /* Build configuration list for PBXProject "Zot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5509339F138D703500577F07;
+			productRefGroup = 550933AD138D703600577F07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				550933AB138D703600577F07 /* Zot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		550933A9138D703600577F07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550933BC138D703600577F07 /* InfoPlist.strings in Resources */,
+				550933D0138D710B00577F07 /* Thunder.aif in Resources */,
+				550933D2138D719200577F07 /* ZotPrefs.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		550933AA138D703600577F07 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		550933A6138D703600577F07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550933C1138D703600577F07 /* ZotView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		550933BA138D703600577F07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				550933BB138D703600577F07 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		550933C2138D703600577F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		550933C3138D703600577F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		550933C5138D703600577F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zot/Zot-Prefix.pch";
+				INFOPLIST_FILE = "Zot/Zot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		550933C6138D703600577F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zot/Zot-Prefix.pch";
+				INFOPLIST_FILE = "Zot/Zot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		550933A4138D703500577F07 /* Build configuration list for PBXProject "Zot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550933C2138D703600577F07 /* Debug */,
+				550933C3138D703600577F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		550933C4138D703600577F07 /* Build configuration list for PBXNativeTarget "Zot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550933C5138D703600577F07 /* Debug */,
+				550933C6138D703600577F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 550933A1138D703500577F07 /* Project object */;
+}

@@ -1,0 +1,219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5568A3F31396E1EC003682C9 /* All Screen Savers */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5568A3F41396E1EC003682C9 /* Build configuration list for PBXAggregateTarget "All Screen Savers" */;
+			buildPhases = (
+			);
+			dependencies = (
+				5568A4161396E21D003682C9 /* PBXTargetDependency */,
+				5568A4181396E21D003682C9 /* PBXTargetDependency */,
+			);
+			name = "All Screen Savers";
+			productName = "All Screen Savers";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		5568A3FE1396E1FA003682C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5568A3F71396E1FA003682C9 /* ADShapes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5562D69C139403D600422611;
+			remoteInfo = ADShapes;
+		};
+		5568A4131396E212003682C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5568A40B1396E212003682C9 /* Bouncing Ball.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552078631371B53700C4E2D0;
+			remoteInfo = "Bouncing Ball";
+		};
+		5568A4151396E21D003682C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5568A40B1396E212003682C9 /* Bouncing Ball.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 552078621371B53700C4E2D0;
+			remoteInfo = "Bouncing Ball";
+		};
+		5568A4171396E21D003682C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5568A3F71396E1FA003682C9 /* ADShapes.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5562D69B139403D600422611;
+			remoteInfo = ADShapes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5568A3F71396E1FA003682C9 /* ADShapes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ADShapes.xcodeproj; path = ADShapes/ADShapes.xcodeproj; sourceTree = "<group>"; };
+		5568A40B1396E212003682C9 /* Bouncing Ball.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Bouncing Ball.xcodeproj"; path = "Bouncing Ball/Bouncing Ball.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5562D68F139403D600422611 = {
+			isa = PBXGroup;
+			children = (
+				5568A40B1396E212003682C9 /* Bouncing Ball.xcodeproj */,
+				5568A3F71396E1FA003682C9 /* ADShapes.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		5568A3F81396E1FA003682C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5568A3FF1396E1FA003682C9 /* ADShapes.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5568A40C1396E212003682C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5568A4141396E212003682C9 /* Bouncing Ball.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		5562D691139403D600422611 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5562D694139403D600422611 /* Build configuration list for PBXProject "All ScreenSavers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5562D68F139403D600422611;
+			productRefGroup = 5562D68F139403D600422611;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5568A3F81396E1FA003682C9 /* Products */;
+					ProjectRef = 5568A3F71396E1FA003682C9 /* ADShapes.xcodeproj */;
+				},
+				{
+					ProductGroup = 5568A40C1396E212003682C9 /* Products */;
+					ProjectRef = 5568A40B1396E212003682C9 /* Bouncing Ball.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5568A3F31396E1EC003682C9 /* All Screen Savers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5568A3FF1396E1FA003682C9 /* ADShapes.saver */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ADShapes.saver;
+			remoteRef = 5568A3FE1396E1FA003682C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5568A4141396E212003682C9 /* Bouncing Ball.saver */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Bouncing Ball.saver";
+			remoteRef = 5568A4131396E212003682C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		5568A4161396E21D003682C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Bouncing Ball";
+			targetProxy = 5568A4151396E21D003682C9 /* PBXContainerItemProxy */;
+		};
+		5568A4181396E21D003682C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ADShapes;
+			targetProxy = 5568A4171396E21D003682C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5562D6B2139403D700422611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		5562D6B3139403D700422611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		5568A3F51396E1EC003682C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5568A3F61396E1EC003682C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5562D694139403D600422611 /* Build configuration list for PBXProject "All ScreenSavers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5562D6B2139403D700422611 /* Debug */,
+				5562D6B3139403D700422611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5568A3F41396E1EC003682C9 /* Build configuration list for PBXAggregateTarget "All Screen Savers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5568A3F51396E1EC003682C9 /* Debug */,
+				5568A3F61396E1EC003682C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5562D691139403D600422611 /* Project object */;
+}

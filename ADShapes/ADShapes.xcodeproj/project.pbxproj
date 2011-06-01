@@ -286,6 +286,7 @@
 				5562D6B6139403D700422611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
