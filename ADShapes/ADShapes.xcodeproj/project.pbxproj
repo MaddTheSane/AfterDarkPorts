@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5562D6A0139403D600422611 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562D69F139403D600422611 /* Cocoa.framework */; };
+		5562D6A2139403D600422611 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562D6A1139403D600422611 /* ScreenSaver.framework */; };
+		5562D6AC139403D600422611 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5562D6AA139403D600422611 /* InfoPlist.strings */; };
+		5562D6AF139403D700422611 /* ADShapesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562D6AE139403D700422611 /* ADShapesView.h */; };
+		5562D6B1139403D700422611 /* ADShapesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5562D6B0139403D700422611 /* ADShapesView.m */; };
+		5562D6B8139404D300422611 /* ADShapesConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5562D6B7139404D300422611 /* ADShapesConfig.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5562D69C139403D600422611 /* ADShapes.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADShapes.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		5562D69F139403D600422611 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5562D6A1139403D600422611 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5562D6A4139403D600422611 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5562D6A5139403D600422611 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5562D6A6139403D600422611 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5562D6A9139403D600422611 /* ADShapes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADShapes-Info.plist"; sourceTree = "<group>"; };
+		5562D6AB139403D600422611 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5562D6AD139403D600422611 /* ADShapes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADShapes-Prefix.pch"; sourceTree = "<group>"; };
+		5562D6AE139403D700422611 /* ADShapesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADShapesView.h; sourceTree = "<group>"; };
+		5562D6B0139403D700422611 /* ADShapesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADShapesView.m; sourceTree = "<group>"; };
+		5562D6B7139404D300422611 /* ADShapesConfig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADShapesConfig.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5562D697139403D600422611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5562D6A0139403D600422611 /* Cocoa.framework in Frameworks */,
+				5562D6A2139403D600422611 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5562D68F139403D600422611 = {
+			isa = PBXGroup;
+			children = (
+				5562D6A7139403D600422611 /* ADShapes */,
+				5562D69E139403D600422611 /* Frameworks */,
+				5562D69D139403D600422611 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5562D69D139403D600422611 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5562D69C139403D600422611 /* ADShapes.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5562D69E139403D600422611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5562D69F139403D600422611 /* Cocoa.framework */,
+				5562D6A1139403D600422611 /* ScreenSaver.framework */,
+				5562D6A3139403D600422611 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5562D6A3139403D600422611 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5562D6A4139403D600422611 /* AppKit.framework */,
+				5562D6A5139403D600422611 /* CoreData.framework */,
+				5562D6A6139403D600422611 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5562D6A7139403D600422611 /* ADShapes */ = {
+			isa = PBXGroup;
+			children = (
+				5562D6AE139403D700422611 /* ADShapesView.h */,
+				5562D6B0139403D700422611 /* ADShapesView.m */,
+				5562D6A8139403D600422611 /* Supporting Files */,
+			);
+			path = ADShapes;
+			sourceTree = "<group>";
+		};
+		5562D6A8139403D600422611 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5562D6A9139403D600422611 /* ADShapes-Info.plist */,
+				5562D6AA139403D600422611 /* InfoPlist.strings */,
+				5562D6AD139403D600422611 /* ADShapes-Prefix.pch */,
+				5562D6B7139404D300422611 /* ADShapesConfig.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5562D698139403D600422611 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5562D6AF139403D700422611 /* ADShapesView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5562D69B139403D600422611 /* ADShapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5562D6B4139403D700422611 /* Build configuration list for PBXNativeTarget "ADShapes" */;
+			buildPhases = (
+				5562D696139403D600422611 /* Sources */,
+				5562D697139403D600422611 /* Frameworks */,
+				5562D698139403D600422611 /* Headers */,
+				5562D699139403D600422611 /* Resources */,
+				5562D69A139403D600422611 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADShapes;
+			productName = ADShapes;
+			productReference = 5562D69C139403D600422611 /* ADShapes.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5562D691139403D600422611 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5562D694139403D600422611 /* Build configuration list for PBXProject "ADShapes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5562D68F139403D600422611;
+			productRefGroup = 5562D69D139403D600422611 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5562D69B139403D600422611 /* ADShapes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5562D699139403D600422611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5562D6AC139403D600422611 /* InfoPlist.strings in Resources */,
+				5562D6B8139404D300422611 /* ADShapesConfig.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5562D69A139403D600422611 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5562D696139403D600422611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5562D6B1139403D700422611 /* ADShapesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5562D6AA139403D600422611 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5562D6AB139403D600422611 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5562D6B2139403D700422611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		5562D6B3139403D700422611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		5562D6B5139403D700422611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADShapes/ADShapes-Prefix.pch";
+				INFOPLIST_FILE = "ADShapes/ADShapes-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		5562D6B6139403D700422611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADShapes/ADShapes-Prefix.pch";
+				INFOPLIST_FILE = "ADShapes/ADShapes-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5562D694139403D600422611 /* Build configuration list for PBXProject "ADShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5562D6B2139403D700422611 /* Debug */,
+				5562D6B3139403D700422611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5562D6B4139403D700422611 /* Build configuration list for PBXNativeTarget "ADShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5562D6B5139403D700422611 /* Debug */,
+				5562D6B6139403D700422611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5562D691139403D600422611 /* Project object */;
+}

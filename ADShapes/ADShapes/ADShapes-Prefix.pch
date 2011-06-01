@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'ADShapes' target in the 'ADShapes' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+	#import <ScreenSaver/ScreenSaver.h>
+#endif

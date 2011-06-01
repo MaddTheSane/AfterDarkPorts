@@ -1,0 +1,23 @@
+.DS_Store
+*.swp
+*~.nib
+
+ADShapes/build/
+
+ADShapes/ADShapes.xcodeproj/*.pbxuser
+ADShapes/ADShapes.xcodeproj/*.perspective
+ADShapes/ADShapes.xcodeproj/*.perspectivev3
+ADShapes/ADShapes.xcodeproj/*.mode1v3
+ADShapes/ADShapes.xcodeproj/*.mode2v3
+ADShapes/ADShapes.xcodeproj/xcuserdata
+ADShapes/ADShapes.xcodeproj/project.xcworkspace
+
+Bouncing Ball/build/
+
+Bouncing Ball/Bouncing Ball.xcodeproj/*.pbxuser
+Bouncing Ball/Bouncing Ball.xcodeproj/*.perspective
+Bouncing Ball/Bouncing Ball.xcodeproj/*.perspectivev3
+Bouncing Ball/Bouncing Ball.xcodeproj/*.mode1v3
+Bouncing Ball/Bouncing Ball.xcodeproj/*.mode2v3
+Bouncing Ball/Bouncing Ball.xcodeproj/xcuserdata
+Bouncing Ball/Bouncing Ball.xcodeproj/project.xcworkspace

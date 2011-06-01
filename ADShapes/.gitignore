@@ -1,0 +1,12 @@
+.DS_Store
+*.swp
+*~.nib
+
+build/
+
+ADShapes.xcodeproj/*.pbxuser
+ADShapes.xcodeproj/*.perspective
+ADShapes.xcodeproj/*.perspectivev3
+ADShapes.xcodeproj/*.mode1v3
+ADShapes.xcodeproj/*.mode2v3
+ADShapes.xcodeproj/xcuserdata

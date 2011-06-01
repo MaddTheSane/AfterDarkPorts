@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55001B1E137472B7008617CC /* bounce.aif in Resources */ = {isa = PBXBuildFile; fileRef = 55001B1D137472B7008617CC /* bounce.aif */; };
+		551900C21389CE1900A6C005 /* BallPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551900C41389CE1900A6C005 /* BallPrefs.xib */; };
+		552078671371B53700C4E2D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552078661371B53700C4E2D0 /* Cocoa.framework */; };
+		552078691371B53700C4E2D0 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552078681371B53700C4E2D0 /* ScreenSaver.framework */; };
+		552078731371B53700C4E2D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 552078711371B53700C4E2D0 /* InfoPlist.strings */; };
+		552078761371B53700C4E2D0 /* Bouncing_BallView.h in Headers */ = {isa = PBXBuildFile; fileRef = 552078751371B53700C4E2D0 /* Bouncing_BallView.h */; };
+		552078781371B53700C4E2D0 /* Bouncing_BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552078771371B53700C4E2D0 /* Bouncing_BallView.m */; };
+		55E2BC251388E0FC00FE8BB4 /* Bouncing Ball.saver in Copy Files */ = {isa = PBXBuildFile; fileRef = 552078631371B53700C4E2D0 /* Bouncing Ball.saver */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55E2BC241388E0E200FE8BB4 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				55E2BC251388E0FC00FE8BB4 /* Bouncing Ball.saver in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55001B1D137472B7008617CC /* bounce.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = bounce.aif; sourceTree = "<group>"; };
+		551900C31389CE1900A6C005 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BallPrefs.xib; sourceTree = "<group>"; };
+		552078631371B53700C4E2D0 /* Bouncing Ball.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bouncing Ball.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552078661371B53700C4E2D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		552078681371B53700C4E2D0 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5520786B1371B53700C4E2D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5520786C1371B53700C4E2D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5520786D1371B53700C4E2D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		552078701371B53700C4E2D0 /* Bouncing Ball-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bouncing Ball-Info.plist"; sourceTree = "<group>"; };
+		552078721371B53700C4E2D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		552078741371B53700C4E2D0 /* Bouncing Ball-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bouncing Ball-Prefix.pch"; sourceTree = "<group>"; };
+		552078751371B53700C4E2D0 /* Bouncing_BallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bouncing_BallView.h; sourceTree = "<group>"; };
+		552078771371B53700C4E2D0 /* Bouncing_BallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Bouncing_BallView.m; sourceTree = "<group>"; };
+		556309A513787EA800D8E0E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		556309A913787EA900D8E0E3 /* adbb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "adbb-Info.plist"; sourceTree = "<group>"; };
+		556309AB13787EA900D8E0E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		556309AD13787EA900D8E0E3 /* adbb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "adbb-Prefix.pch"; sourceTree = "<group>"; };
+		556309B213787EC000D8E0E3 /* Bouncing Ball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = "Bouncing Ball.c"; sourceTree = "<group>"; };
+		556309B413787EE200D8E0E3 /* Bouncing Ball.proj.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = "Bouncing Ball.proj.rsrc"; sourceTree = "<group>"; };
+		556309B513787EE200D8E0E3 /* GraphicsModule_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = GraphicsModule_main.c; sourceTree = "<group>"; };
+		556309B613787EE200D8E0E3 /* GraphicsModule_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsModule_Types.h; sourceTree = "<group>"; };
+		556309B713787EE200D8E0E3 /* Sounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sounds.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5520785E1371B53700C4E2D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552078671371B53700C4E2D0 /* Cocoa.framework in Frameworks */,
+				552078691371B53700C4E2D0 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		552078561371B53700C4E2D0 = {
+			isa = PBXGroup;
+			children = (
+				5520786E1371B53700C4E2D0 /* Bouncing Ball */,
+				556309A713787EA800D8E0E3 /* adbb */,
+				552078651371B53700C4E2D0 /* Frameworks */,
+				552078641371B53700C4E2D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		552078641371B53700C4E2D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				552078631371B53700C4E2D0 /* Bouncing Ball.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552078651371B53700C4E2D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552078661371B53700C4E2D0 /* Cocoa.framework */,
+				552078681371B53700C4E2D0 /* ScreenSaver.framework */,
+				556309A513787EA800D8E0E3 /* CoreFoundation.framework */,
+				5520786A1371B53700C4E2D0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5520786A1371B53700C4E2D0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5520786B1371B53700C4E2D0 /* AppKit.framework */,
+				5520786C1371B53700C4E2D0 /* CoreData.framework */,
+				5520786D1371B53700C4E2D0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5520786E1371B53700C4E2D0 /* Bouncing Ball */ = {
+			isa = PBXGroup;
+			children = (
+				552078751371B53700C4E2D0 /* Bouncing_BallView.h */,
+				552078771371B53700C4E2D0 /* Bouncing_BallView.m */,
+				5520786F1371B53700C4E2D0 /* Supporting Files */,
+			);
+			path = "Bouncing Ball";
+			sourceTree = "<group>";
+		};
+		5520786F1371B53700C4E2D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55001B1D137472B7008617CC /* bounce.aif */,
+				552078701371B53700C4E2D0 /* Bouncing Ball-Info.plist */,
+				552078711371B53700C4E2D0 /* InfoPlist.strings */,
+				552078741371B53700C4E2D0 /* Bouncing Ball-Prefix.pch */,
+				551900C41389CE1900A6C005 /* BallPrefs.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		556309A713787EA800D8E0E3 /* adbb */ = {
+			isa = PBXGroup;
+			children = (
+				556309B213787EC000D8E0E3 /* Bouncing Ball.c */,
+				556309B413787EE200D8E0E3 /* Bouncing Ball.proj.rsrc */,
+				556309B513787EE200D8E0E3 /* GraphicsModule_main.c */,
+				556309B613787EE200D8E0E3 /* GraphicsModule_Types.h */,
+				556309B713787EE200D8E0E3 /* Sounds.h */,
+				556309A813787EA900D8E0E3 /* Supporting Files */,
+			);
+			path = adbb;
+			sourceTree = "<group>";
+		};
+		556309A813787EA900D8E0E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556309A913787EA900D8E0E3 /* adbb-Info.plist */,
+				556309AA13787EA900D8E0E3 /* InfoPlist.strings */,
+				556309AD13787EA900D8E0E3 /* adbb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5520785F1371B53700C4E2D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552078761371B53700C4E2D0 /* Bouncing_BallView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		552078621371B53700C4E2D0 /* Bouncing Ball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5520787B1371B53700C4E2D0 /* Build configuration list for PBXNativeTarget "Bouncing Ball" */;
+			buildPhases = (
+				5520785D1371B53700C4E2D0 /* Sources */,
+				5520785E1371B53700C4E2D0 /* Frameworks */,
+				5520785F1371B53700C4E2D0 /* Headers */,
+				552078601371B53700C4E2D0 /* Resources */,
+				55E2BC241388E0E200FE8BB4 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bouncing Ball";
+			productName = "Bouncing Ball";
+			productReference = 552078631371B53700C4E2D0 /* Bouncing Ball.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		552078581371B53700C4E2D0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5520785B1371B53700C4E2D0 /* Build configuration list for PBXProject "Bouncing Ball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 552078561371B53700C4E2D0;
+			productRefGroup = 552078641371B53700C4E2D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				552078621371B53700C4E2D0 /* Bouncing Ball */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		552078601371B53700C4E2D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552078731371B53700C4E2D0 /* InfoPlist.strings in Resources */,
+				55001B1E137472B7008617CC /* bounce.aif in Resources */,
+				551900C21389CE1900A6C005 /* BallPrefs.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5520785D1371B53700C4E2D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552078781371B53700C4E2D0 /* Bouncing_BallView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		551900C41389CE1900A6C005 /* BallPrefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551900C31389CE1900A6C005 /* en */,
+			);
+			name = BallPrefs.xib;
+			sourceTree = "<group>";
+		};
+		552078711371B53700C4E2D0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552078721371B53700C4E2D0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		556309AA13787EA900D8E0E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556309AB13787EA900D8E0E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		552078791371B53700C4E2D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		5520787A1371B53700C4E2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		5520787C1371B53700C4E2D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bouncing Ball/Bouncing Ball-Prefix.pch";
+				INFOPLIST_FILE = "Bouncing Ball/Bouncing Ball-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		5520787D1371B53700C4E2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bouncing Ball/Bouncing Ball-Prefix.pch";
+				INFOPLIST_FILE = "Bouncing Ball/Bouncing Ball-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5520785B1371B53700C4E2D0 /* Build configuration list for PBXProject "Bouncing Ball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552078791371B53700C4E2D0 /* Debug */,
+				5520787A1371B53700C4E2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5520787B1371B53700C4E2D0 /* Build configuration list for PBXNativeTarget "Bouncing Ball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5520787C1371B53700C4E2D0 /* Debug */,
+				5520787D1371B53700C4E2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 552078581371B53700C4E2D0 /* Project object */;
+}
