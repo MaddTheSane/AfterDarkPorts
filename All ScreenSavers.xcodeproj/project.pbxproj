@@ -212,6 +212,7 @@
 				5568A3F61396E1EC003682C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
