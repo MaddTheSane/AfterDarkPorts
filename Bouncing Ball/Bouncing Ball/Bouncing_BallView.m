@@ -239,15 +239,15 @@ static inline CGFloat RandomAngle(short lower, short upper)
     return YES;
 }
 
--(void)awakeFromNib
-{
-	[ballColorWell setColor:[self getColorFromDefaults]];
-}
-
 - (NSWindow*)configureSheet
 {
 	if (configureSheet == nil) {
 		[NSBundle loadNibNamed:@"BallPrefs" owner:self];
+	}
+	if (configureSheet) {
+		[ballColorWell setColor:[self getColorFromDefaults]];
+		[credits readRTFDFromFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"Credits" ofType:@"rtf"]];
+
 	}
 	return configureSheet;
 }

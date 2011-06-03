@@ -14,6 +14,7 @@
 		552078731371B53700C4E2D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 552078711371B53700C4E2D0 /* InfoPlist.strings */; };
 		552078761371B53700C4E2D0 /* Bouncing_BallView.h in Headers */ = {isa = PBXBuildFile; fileRef = 552078751371B53700C4E2D0 /* Bouncing_BallView.h */; };
 		552078781371B53700C4E2D0 /* Bouncing_BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552078771371B53700C4E2D0 /* Bouncing_BallView.m */; };
+		558C54DD13996A66007647D4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 558C54DB13996A66007647D4 /* Credits.rtf */; };
 		55E2BC251388E0FC00FE8BB4 /* Bouncing Ball.saver in Copy Files */ = {isa = PBXBuildFile; fileRef = 552078631371B53700C4E2D0 /* Bouncing Ball.saver */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		556309B513787EE200D8E0E3 /* GraphicsModule_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = GraphicsModule_main.c; sourceTree = "<group>"; };
 		556309B613787EE200D8E0E3 /* GraphicsModule_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsModule_Types.h; sourceTree = "<group>"; };
 		556309B713787EE200D8E0E3 /* Sounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sounds.h; sourceTree = "<group>"; };
+		558C54DC13996A66007647D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				552078711371B53700C4E2D0 /* InfoPlist.strings */,
 				552078741371B53700C4E2D0 /* Bouncing Ball-Prefix.pch */,
 				551900C41389CE1900A6C005 /* BallPrefs.xib */,
+				558C54DB13996A66007647D4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				552078731371B53700C4E2D0 /* InfoPlist.strings in Resources */,
 				55001B1E137472B7008617CC /* bounce.aif in Resources */,
 				551900C21389CE1900A6C005 /* BallPrefs.xib in Resources */,
+				558C54DD13996A66007647D4 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +259,14 @@
 				556309AB13787EA900D8E0E3 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		558C54DB13996A66007647D4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558C54DC13996A66007647D4 /* en */,
+			);
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

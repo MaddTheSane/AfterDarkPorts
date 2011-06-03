@@ -24,6 +24,7 @@
 	NSSound		*bounceSound;	/* the sound(s) to make when the ball bounces. */
 	IBOutlet NSWindow *configureSheet;
 	IBOutlet NSColorWell *ballColorWell;
+	IBOutlet NSTextView *credits;
 }
 @property (readwrite) CGFloat ballSpeed;
 @property (readwrite) NSInteger ballDiameter;
