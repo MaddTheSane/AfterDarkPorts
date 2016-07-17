@@ -6,6 +6,8 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#include <math.h>
+#include <tgmath.h>
 #import "Bouncing_BallView.h"
 
 #define BOUNCE_COUNT			10		/* number of bounces before changing direction. */
@@ -35,11 +37,13 @@ static short BBrandom(short lower, short upper)
 
 static inline CGFloat RandomAngle(short lower, short upper)
 {
-	return (((BBrandom(lower, upper))* M_PI_4) / 45.0f);
+	return (((BBrandom(lower, upper))* M_PI_4) / 45.0);
 }
 
 @implementation Bouncing_BallView
-
+{
+	NSArray *nibObjects;
+}
 @synthesize ballSpeed;
 @synthesize ballDiameter;
 @synthesize soundAvailable;
@@ -47,11 +51,11 @@ static inline CGFloat RandomAngle(short lower, short upper)
 + (void)initialize
 {
 	ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:BBDefaults];
-	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-	[dict setObject:[NSNumber numberWithShort:12] forKey:BBSize];
-	[dict setObject:[NSNumber numberWithShort:10] forKey:BBSpeed];
-	[dict setObject:[NSNumber numberWithBool:YES] forKey:BBPlaySound];
-	[dict setObject:[NSKeyedArchiver archivedDataWithRootObject:[NSColor whiteColor]] forKey:BBColor];
+	NSDictionary *dict = @{BBSize: @12,
+						   BBSpeed: @10,
+						   BBPlaySound: @YES,
+						   BBColor: [NSKeyedArchiver archivedDataWithRootObject:[NSColor whiteColor]]};
+	
 	[defaults registerDefaults:dict];
 }
 
@@ -76,7 +80,7 @@ static inline CGFloat RandomAngle(short lower, short upper)
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-		srandom((int)time(NULL));
+		srandom(time(NULL) & 0x7fffffff);
         [self setAnimationTimeInterval:1/30.0];
 #if 0
 		ballSize = NSMakeSize(15, 15);
@@ -118,13 +122,8 @@ static inline CGFloat RandomAngle(short lower, short upper)
 		
 		/* choose a random direction for the ball to travel. */
 		CGFloat ballAngle = RandomAngle(10, 80);
-#if CGFLOAT_IS_DOUBLE
 		ballSin = sin(ballAngle);
 		ballCos = cos(ballAngle);
-#else
-		ballSin = sinf(ballAngle);
-		ballCos = cosf(ballAngle);
-#endif
 		
 		
 		NSBundle *ssBundle = [NSBundle bundleForClass:[self class]];
@@ -148,10 +147,16 @@ static inline CGFloat RandomAngle(short lower, short upper)
 
 - (void)drawRect:(NSRect)rect
 {
-	//This is a rather inefficient way of moving the ball
-	//we draw the background, then draw the ball.
     [super drawRect:rect];
+	NSBezierPath *ballBezierPath = [NSBezierPath bezierPathWithOvalInRect:ballRect];
+	[ballColor set];
+	[ballBezierPath fill];
+}
+
+- (void)animateOneFrame
+{
 	CGFloat xVelocity, yVelocity;
+	NSRect oldBall = ballRect;
 	BOOL bouncing = NO;
 	xVelocity = ballSpeed * ballCos;
 	yVelocity = ballSpeed * ballSin;
@@ -166,24 +171,25 @@ static inline CGFloat RandomAngle(short lower, short upper)
 	/* if not, the ball should bounce off the wall and change direction. */
 	{
 		NSRect viewRect = [self bounds];
-	
+		
 		ballRect.origin = newBallPoint;
-	
-		if ( ballRect.origin.y <= viewRect.origin.y ) {
+		
+		if (ballRect.origin.y <= viewRect.origin.y) {
 			ydir = -ydir;
 			ballRect.origin.y = viewRect.origin.y;
 			
 			bouncing = YES;
-		}else if ((ballRect.origin.y + ballRect.size.height) >= viewRect.size.height) {
+		} else if ((ballRect.origin.y + ballRect.size.height) >= viewRect.size.height) {
 			ydir = -ydir;
 			ballRect.origin.y = viewRect.size.height - ballRect.size.height;
 			
 			bouncing = YES;
 		}
-		if ( ballRect.origin.x <= viewRect.origin.x ) {
+		
+		if (ballRect.origin.x <= viewRect.origin.x) {
 			xdir = -xdir;
 			ballRect.origin.x = viewRect.origin.x;
-		
+			
 			bouncing = YES;
 		} else if ((ballRect.origin.x + ballRect.size.width) >= viewRect.size.width) {
 			xdir = -xdir;
@@ -192,9 +198,6 @@ static inline CGFloat RandomAngle(short lower, short upper)
 			bouncing = YES;
 		}
 	}
-
-	
-
 	
 	if(bouncing) {
 		if(bounceCount-- == 0) {
@@ -202,27 +205,14 @@ static inline CGFloat RandomAngle(short lower, short upper)
 			/* choose an angle between 10° and 80°. */
 			CGFloat ballAngle = RandomAngle(10, 80);
 			bounceCount = BOUNCE_COUNT;
-#if CGFLOAT_IS_DOUBLE
 			ballSin = sin(ballAngle);
 			ballCos = cos(ballAngle);
-#else
-			ballSin = sinf(ballAngle);
-			ballCos = cosf(ballAngle);
-#endif
 		}
 		/* play the sound. */
 		if(soundAvailable)
 			[bounceSound play];
 	}
-	NSBezierPath *ballBezierPath = [NSBezierPath bezierPathWithOvalInRect:ballRect];
-	[ballColor set];
-	[ballBezierPath fill];
-}
-
-- (void)animateOneFrame
-{
-    [self setNeedsDisplay:YES];
-	return;
+	[self setNeedsDisplayInRect:NSUnionRect(oldBall, ballRect)];
 }
 
 - (BOOL)hasConfigureSheet
@@ -233,7 +223,9 @@ static inline CGFloat RandomAngle(short lower, short upper)
 - (NSWindow*)configureSheet
 {
 	if (configureSheet == nil) {
-		[NSBundle loadNibNamed:@"BallPrefs" owner:self];
+		NSArray *arr;
+		[[NSBundle bundleForClass:[self class]] loadNibNamed:@"BallPrefs" owner:self topLevelObjects:&arr];
+		nibObjects = arr;
 	}
 	if (configureSheet) {
 		[ballColorWell setColor:[self getColorFromDefaults]];
@@ -258,12 +250,12 @@ static inline CGFloat RandomAngle(short lower, short upper)
 - (IBAction)okayButton:(id)sender {
 	ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:BBDefaults];
 #if CGFLOAT_IS_DOUBLE
-	[defaults setObject:[NSNumber numberWithDouble:self.ballSpeed] forKey:BBSpeed];
+	[defaults setDouble:self.ballSpeed forKey:BBSpeed];
 #else
-	[defaults setObject:[NSNumber numberWithFloat:self.ballSpeed] forKey:BBSpeed];
+	[defaults setFloat:self.ballSpeed forKey:BBSpeed];
 #endif
-	[defaults setObject:[NSNumber numberWithInteger:self.ballDiameter] forKey:BBSize];
-	[defaults setObject:[NSNumber numberWithBool:self.soundAvailable ]  forKey:BBPlaySound];
+	[defaults setInteger:self.ballDiameter forKey:BBSize];
+	[defaults setBool:self.soundAvailable forKey:BBPlaySound];
 	[self setColorForDefaults:[ballColorWell color]];
 	[defaults synchronize];
 	ballRect.size = NSMakeSize(ballDiameter, ballDiameter);

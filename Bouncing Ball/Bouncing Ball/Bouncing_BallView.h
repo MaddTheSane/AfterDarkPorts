@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <ScreenSaver/ScreenSaver.h>
 
 
