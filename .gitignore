@@ -2,34 +2,11 @@
 *.swp
 *~.nib
 
-ADShapes/build/
-
-ADShapes/ADShapes.xcodeproj/*.pbxuser
-ADShapes/ADShapes.xcodeproj/*.perspective
-ADShapes/ADShapes.xcodeproj/*.perspectivev3
-ADShapes/ADShapes.xcodeproj/*.mode1v3
-ADShapes/ADShapes.xcodeproj/*.mode2v3
-ADShapes/ADShapes.xcodeproj/xcuserdata
-ADShapes/ADShapes.xcodeproj/project.xcworkspace
-
-Bouncing Ball/build/
-
-Bouncing Ball/Bouncing Ball.xcodeproj/*.pbxuser
-Bouncing Ball/Bouncing Ball.xcodeproj/*.perspective
-Bouncing Ball/Bouncing Ball.xcodeproj/*.perspectivev3
-Bouncing Ball/Bouncing Ball.xcodeproj/*.mode1v3
-Bouncing Ball/Bouncing Ball.xcodeproj/*.mode2v3
-Bouncing Ball/Bouncing Ball.xcodeproj/xcuserdata
-Bouncing Ball/Bouncing Ball.xcodeproj/project.xcworkspace
-
 build/
-All ScreenSavers.xcodeproj/*.pbxuser
-All ScreenSavers.xcodeproj/*.perspective
-All ScreenSavers.xcodeproj/*.perspectivev3
-All ScreenSavers.xcodeproj/*.mode1v3
-All ScreenSavers.xcodeproj/*.mode2v3
-All ScreenSavers.xcodeproj/xcuserdata
-All ScreenSavers.xcodeproj/project.xcworkspace
-
-ADShapes/ADShapes.xcodeproj/project.xcworkspace/xcuserdata
-Bouncing Ball/Bouncing Ball.xcodeproj/project.xcworkspace/xcuserdata
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+xcuserdata/
+project.xcworkspace/
