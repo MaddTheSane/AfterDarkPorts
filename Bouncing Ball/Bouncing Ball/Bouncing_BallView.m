@@ -67,8 +67,7 @@ static inline CGFloat RandomAngle(short lower, short upper)
 	ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:BBDefaults];
 	[defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:color] forKey:BBColor];
 	if (color != ballColor) {
-		[ballColor release];
-		ballColor = [color retain];
+		ballColor = color;
 	}
 	//[defaults synchronize];
 }
@@ -135,14 +134,6 @@ static inline CGFloat RandomAngle(short lower, short upper)
 #endif
     }
     return self;
-}
-
-- (void)dealloc
-{
-	[ballColor release];
-	[bounceSound release];
-	
-	[super dealloc];
 }
 
 - (void)startAnimation
